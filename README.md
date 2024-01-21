@@ -9,8 +9,9 @@ I sourced the data from a built in dataset in the ISLR package in R called 'Defa
 
 ## Data Analysis
 Prior to performing any logistic regression I conducted some exploratory data analysis (EDA). I evaluated the relationships between the independent variables and the dependent variable as well as the relationships between the independent variables. Two examples of EDA visualizations: 
-<img src="credit-balance_files/log.png" alt="Image Description" width="400"/>
-<img src="credit-balance_files/box.png" alt="Image Description" width="400"/>
+
+<img src="credit-balance_files/log.png" alt="Image Description" width="700"/>
+<img src="credit-balance_files/box.png" alt="Image Description" width="700"/>
 
 Following the EDA I conducted forwards stepwise selection analysis by starting with only one variable: balance and adding variables one by one. Each time a new variable was added I would re-evaluate the slope coefficients and p-values as well as the overall model fit measured by the AIC. The model with the lowest AIC and therefore best fit included: student and balance. Income was deemed a statistically insignificant predictor of default probability as it had a p-value of 0.711, much greater than the standard 0.05 level. This was further proven as the model that included only student and balance had a lower AIC. I then put together a confusion matrix to evaluate the accuracy, error rate, sensitivity and specificty of the model. The model had an accuracy rate of 0.9733, an error rate of 0.0267, sensitivty of 0.3153, and specificity of 0.9960. 
 
