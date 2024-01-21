@@ -10,3 +10,4 @@ I sourced the data from a built in dataset in the ISLR package in R called 'Defa
 ## Data Analysis
 
 Prior to performing any logistic regression I conducted some exploratory data analysis (EDA). I evaluated the relationships between the independent variables and the dependent variable as well as the relationships between the independent variables. Two examples of EDA visualizations: 
+
